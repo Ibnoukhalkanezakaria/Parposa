@@ -134,6 +134,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   cursor: pointer;
+  opacity: 0;
 }
 .open span {
   margin-bottom: 10px;
@@ -142,7 +143,6 @@ nav {
   background-color: var(--color2);
 }
 /* End Header */
-
 /* Start Main */
 .main-cnt {
   padding: var(--section-padding);
@@ -155,6 +155,46 @@ nav {
   max-width: 100%;
 }
 /* End Main */
+/* Start Classes */
+.classes {
+  padding: var(--section-padding);
+}
+.rw {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 100%;
+}
+.rw .img img {
+  max-width: 100%;
+}
+.info {
+  color: var(--color2);
+}
+.info h1 {
+  font-size: var(--fs-2);
+}
+.info p {
+  font-size: var(--fs-9);
+  line-height: 35px;
+  width: 450px;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.info button {
+  background-color: var(--color4);
+  border: none;
+  color: var(--color2);
+  padding: 25px 35px;
+  cursor: pointer;
+  transition: var(--transition1);
+  font-weight: 600;
+}
+.info button:hover {
+  opacity: 0.8;
+}
+/* End Classes */
 
 /* MEDIA QEURY */
 @media (max-width: 992px) {
@@ -162,5 +202,36 @@ nav {
   .social-links,
   .bookroom-btn {
     display: none;
+  }
+  .main-cnt h1 {
+    font-size: var(--fs-2);
+  }
+  .open {
+    opacity: 1;
+  }
+  .classes {
+    margin: 0;
+  }
+  .rw {
+    margin: var(--section-margin);
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .rw .img {
+    order: 0;
+  }
+  .info {
+    order: 1;
+  }
+  .info h1 {
+    font-size: var(--fs-2);
+  }
+  .info p {
+    width: 100%;
+    max-width: 100%;
+  }
+  .main-cnt,
+  .classes {
+    padding: 0;
   }
 }

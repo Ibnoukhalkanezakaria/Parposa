@@ -6,7 +6,7 @@
   --color3: #949189;
   --color4: #949189;
   /* ## Typography  */
-  --fs-1: calc(2.3rem + 2.1vw);
+  --fs-1: calc(2.3rem + 1.1vw);
   --fs-2: calc(2.1rem + 0.9vw);
   --fs-3: calc(2rem + 0.3vw);
   --fs-4: 2rem;
@@ -29,10 +29,10 @@
   --radius-8: 8px;
   --radius-16: 16px;
   /* ## Transition  */
-  --transition: 0.25s ease;
-  --transition1: 0.3s ease;
-  --transition: 0.5s ease;
-  --transition: 0.7s ease;
+  --transition1: 0.25s ease;
+  --transition2: 0.3s ease;
+  --transition3: 0.5s ease;
+  --transition4: 0.7s ease;
 }
 /* End Variables */
 /* Start Global rules */
@@ -86,3 +86,81 @@ ul {
   }
 }
 /* End Global rules */
+
+/* Start Header */
+header {
+  padding: 30px 0;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo {
+  margin-right: auto;
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--color2);
+}
+.nav-links ul li {
+  display: inline-block;
+}
+.nav-links ul li a {
+  color: var(--color2);
+  padding: 15px;
+  font-size: 16px;
+}
+.social-links {
+  margin: 30px;
+}
+.social-links a {
+  color: var(--color2);
+  margin-right: 20px;
+  font-size: 20px;
+}
+.bookroom-btn button {
+  background-color: var(--color4);
+  border: none;
+  color: var(--color2);
+  padding: 15px 28px;
+  cursor: pointer;
+  transition: var(--transition1);
+}
+.bookroom-btn button:hover {
+  opacity: 0.8;
+}
+.open {
+  width: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.open span {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color2);
+}
+/* End Header */
+
+/* Start Main */
+.main-cnt {
+  padding: var(--section-padding);
+}
+.main-cnt h1 {
+  color: var(--color2);
+  font-size: var(--fs-1);
+}
+.maincnt-img img {
+  max-width: 100%;
+}
+/* End Main */
+
+/* MEDIA QEURY */
+@media (max-width: 992px) {
+  .nav-links,
+  .social-links,
+  .bookroom-btn {
+    display: none;
+  }
+}

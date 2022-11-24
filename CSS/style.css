@@ -225,6 +225,7 @@ nav {
 .cta-cnt h1 {
   color: var(--color2);
   font-size: var(--fs-2);
+  min-width: 250px;
 }
 .cta-cnt button {
   margin-top: 40px;
@@ -259,7 +260,7 @@ footer {
 }
 .col .title a {
   color: var(--color2);
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   font-weight: 600;
 }
 .social-icon {

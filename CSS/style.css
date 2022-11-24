@@ -1,0 +1,88 @@
+/* Start Variables */
+:root {
+  /* ## Colors ``` */
+  --color1: #272725;
+  --color2: #ffffff;
+  --color3: #949189;
+  --color4: #949189;
+  /* ## Typography  */
+  --fs-1: calc(2.3rem + 2.1vw);
+  --fs-2: calc(2.1rem + 0.9vw);
+  --fs-3: calc(2rem + 0.3vw);
+  --fs-4: 2rem;
+  --fs-5: 1.8rem;
+  --fs-6: 1.5rem;
+  --fs-7: 1.4rem;
+  --fs-8: 1.3rem;
+  --fs-9: 1.2rem;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  /* ## Spacing  */
+  --section-padding: 50px 0;
+  --section-margin: 50px 0;
+  /* ## Border Radius  */
+  --radius-circle: 50%;
+  --radius-5: 5px;
+  --radius-8: 8px;
+  --radius-16: 16px;
+  /* ## Transition  */
+  --transition: 0.25s ease;
+  --transition1: 0.3s ease;
+  --transition: 0.5s ease;
+  --transition: 0.7s ease;
+}
+/* End Variables */
+/* Start Global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color1);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* SMALL */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* MEDIUM */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* LARGE */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global rules */

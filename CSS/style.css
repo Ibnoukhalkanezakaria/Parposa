@@ -7,7 +7,7 @@
   --color4: #949189;
   /* ## Typography  */
   --fs-1: calc(2.3rem + 1.1vw);
-  --fs-2: calc(2.1rem + 0.9vw);
+  --fs-2: calc(2.1rem + 0.8vw);
   --fs-3: calc(2rem + 0.3vw);
   --fs-4: 2rem;
   --fs-5: 1.8rem;
@@ -129,19 +129,6 @@ nav {
 .bookroom-btn button:hover {
   opacity: 0.8;
 }
-.open {
-  width: 35px;
-  display: flex;
-  flex-wrap: wrap;
-  cursor: pointer;
-  opacity: 0;
-}
-.open span {
-  margin-bottom: 10px;
-  width: 100%;
-  height: 1px;
-  background-color: var(--color2);
-}
 /* End Header */
 /* Start Main */
 .main-cnt {
@@ -174,6 +161,7 @@ nav {
 }
 .info h1 {
   font-size: var(--fs-2);
+  font-weight: 600;
 }
 .info p {
   font-size: var(--fs-9);
@@ -222,9 +210,6 @@ nav {
   }
   .info {
     order: 1;
-  }
-  .info h1 {
-    font-size: var(--fs-2);
   }
   .info p {
     width: 100%;

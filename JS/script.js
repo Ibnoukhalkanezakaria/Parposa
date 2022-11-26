@@ -1,12 +1,9 @@
 // Open & Close Menu
 
-const navLinks = document.querySelector(".r-s");
-openmenu = document.getElementById("openmenu");
-closemenu = document.getElementById("closemenu");
+const navToggle = document.querySelector(".nav-toggle");
+const rs = document.querySelector(".r-s");
 
-openmenu.onclick = function () {
-  navLinks.classList.add("active");
-};
-closemenu.onclick = function () {
-  navLinks.classList.remove("active");
+navToggle.onclick = function () {
+  navToggle.classList.toggle("active");
+  rs.classList.toggle("show");
 };

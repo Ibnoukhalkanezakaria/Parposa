@@ -49,6 +49,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+body.hidden {
+  overflow: hidden;
+}
 html,
 body {
   width: 100%;
@@ -306,21 +309,25 @@ footer {
     text-align: center;
     position: fixed;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     z-index: 2;
-    visibility: hidden;
+    opacity: 0;
     transition: var(--transition3);
+    transform: translateY(100px);
+    gap: 3rem;
   }
   .r-s.show {
-    left: 0;
-    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
   }
   .nav-links ul li {
     display: block;
+    padding: 20px;
+    transition: var(--transition3);
   }
   .main-cnt h1 {
     font-size: var(--fs-2);
